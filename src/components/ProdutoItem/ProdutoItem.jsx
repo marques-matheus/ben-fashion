@@ -30,7 +30,7 @@ function ProdutoItem({ titulo, src, preco }) {
   `;
 
   return (
-    <Container href="">
+    <Container href={`/categoria/${titulo}`}>
       <Img src={src} alt={titulo} />
       <TituloProduto>{titulo}</TituloProduto>
       <PrecoProduto>{preco}</PrecoProduto>
