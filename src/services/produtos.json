@@ -1,0 +1,22 @@
+[
+  {
+    "titulo": "Blusa Estranha",
+    "src": "/img/img.jpg",
+    "preco": "R$: 100,00"
+  },
+  {
+    "titulo": "Saia Daora",
+    "src": "/img/img2.jpg",
+    "preco": "R$: 100,00"
+  },
+  {
+    "titulo": "Saia Daora",
+    "src": "/img/img3.jpg",
+    "preco": "R$: 100,00"
+  },
+  {
+    "titulo": "Saia Daora",
+    "src": "/img/img4.jpg",
+    "preco": "R$: 100,00"
+  }
+]

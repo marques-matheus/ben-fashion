@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import Cabecalho from "../../components/header";
+import ProdutoItem from "../../components/ProdutoItem/ProdutoItem";
 import homeImg from "../../img/imgHome.jpg";
+import produtos from "../../services/produtos.json";
 
 const Img = styled.img`
   margin: 10% 0 10% 0;
@@ -31,8 +33,20 @@ function Home() {
   return (
     <>
       <Cabecalho />
-      <Img src={homeImg} alt="Home" />
-      <Botao>EXPLORAR COLEÇÃO</Botao>
+      <main>
+        <Img src={homeImg} alt="Home" />
+        <Botao>EXPLORAR COLEÇÃO</Botao>
+      </main>
+      <section>
+        {produtos.map((produto, index) => (
+          <ProdutoItem
+            key={index}
+            src={produto.src}
+            preco={produto.preco}
+            titulo={produto.titulo}
+          />
+        ))}
+      </section>
     </>
   );
 }
