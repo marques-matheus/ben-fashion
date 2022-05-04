@@ -1,22 +1,22 @@
 [
   {
-    "titulo": "Blusa Estranha",
+    "titulo": "Blusa Mapa do Mario",
     "src": "/img/img.jpg",
-    "preco": "R$: 100,00"
+    "preco": "R$150,00"
   },
   {
-    "titulo": "Saia Daora",
+    "titulo": "Casaco verde",
     "src": "/img/img2.jpg",
-    "preco": "R$: 100,00"
+    "preco": "R$250,00"
   },
   {
-    "titulo": "Saia Daora",
+    "titulo": "Conjunto Bizarro",
     "src": "/img/img3.jpg",
-    "preco": "R$: 100,00"
+    "preco": "R$350,00"
   },
   {
-    "titulo": "Saia Daora",
+    "titulo": "Bolsa cara",
     "src": "/img/img4.jpg",
-    "preco": "R$: 100,00"
+    "preco": "R$250,00"
   }
 ]

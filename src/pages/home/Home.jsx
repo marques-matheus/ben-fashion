@@ -29,6 +29,13 @@ const Botao = styled.button`
   }
 `;
 
+const Container = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 8%;
+  grid-gap: 20px;
+`;
+
 function Home() {
   return (
     <>
@@ -37,7 +44,7 @@ function Home() {
         <Img src={homeImg} alt="Home" />
         <Botao>EXPLORAR COLEÇÃO</Botao>
       </main>
-      <section>
+      <Container>
         {produtos.map((produto, index) => (
           <ProdutoItem
             key={index}
@@ -46,7 +53,7 @@ function Home() {
             titulo={produto.titulo}
           />
         ))}
-      </section>
+      </Container>
     </>
   );
 }
