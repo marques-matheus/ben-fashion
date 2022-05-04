@@ -3,6 +3,9 @@ import Cabecalho from "../../components/header";
 import ProdutoItem from "../../components/ProdutoItem/ProdutoItem";
 import homeImg from "../../img/imgHome.jpg";
 import produtos from "../../services/produtos.json";
+import Container from "../../components/ContainerProdutos";
+import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+import Rodape from "../../components/footer/Footer";
 
 const Img = styled.img`
   margin: 10% 0 10% 0;
@@ -29,11 +32,15 @@ const Botao = styled.button`
   }
 `;
 
-const Container = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 8%;
-  grid-gap: 20px;
+const Div = styled.a`
+  width: 130px;
+  display: flex;
+  align-items: center;
+  margin: 10% auto;
+  justify-content: space-between;
+  padding: 12px;
+  text-decoration: none;
+  color: black;
 `;
 
 function Home() {
@@ -44,6 +51,7 @@ function Home() {
         <Img src={homeImg} alt="Home" />
         <Botao>EXPLORAR COLEÇÃO</Botao>
       </main>
+
       <Container>
         {produtos.map((produto, index) => (
           <ProdutoItem
@@ -54,6 +62,11 @@ function Home() {
           />
         ))}
       </Container>
+
+      <Div href="#">
+        Explore Mais <HiOutlineArrowNarrowRight />
+      </Div>
+      <Rodape />
     </>
   );
 }

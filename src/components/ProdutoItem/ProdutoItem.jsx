@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
 function ProdutoItem({ titulo, src, preco }) {
-  const Container = styled.div`
+  const Container = styled.a`
     display: flex;
     flex-direction: column;
-    align-items: center; ;
+    align-items: center; 
+    color: black;
+    text-decoration: none;
   `;
 
   const Img = styled.img`
@@ -28,7 +30,7 @@ function ProdutoItem({ titulo, src, preco }) {
   `;
 
   return (
-    <Container>
+    <Container href="">
       <Img src={src} alt={titulo} />
       <TituloProduto>{titulo}</TituloProduto>
       <PrecoProduto>{preco}</PrecoProduto>
