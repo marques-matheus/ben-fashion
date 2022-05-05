@@ -5,10 +5,11 @@ import homeImg from "../../img/imgHome.jpg";
 import produtos from "../../services/produtos.json";
 import Container from "../../components/ContainerProdutos";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
-import Rodape from "../../components/footer/Footer";
+import Rodape from "../../components/footer";
+import { Divisor } from "../../components/divisor/Divisor";
 
 const Img = styled.img`
-  margin: 10% 0 10% 0;
+  margin: 10% 0 5% 0;
   width: 100%;
   height: auto;
 `;
@@ -67,9 +68,9 @@ const Acessories = styled(Luxury)`
 
 const And = styled(Luxury)`
   left: 36.71px;
-top: 317.24px;
-font-size: 2rem;
-`
+  top: 317.24px;
+  font-size: 2rem;
+`;
 
 function Home() {
   return (
@@ -83,6 +84,8 @@ function Home() {
         <Img src={homeImg} alt="Home" />
         <Botao>EXPLORAR COLEÇÃO</Botao>
       </main>
+
+      <Divisor/>
 
       <Container>
         {produtos.map((produto, index) => (

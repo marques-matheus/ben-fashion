@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { RiTwitterFill, RiInstagramFill, RiYoutubeFill } from "react-icons/ri";
+import { Divisor } from "../divisor/Divisor";
 
 const Principal = styled.footer`
   display: flex;
@@ -37,15 +38,17 @@ function Rodape() {
           <RiInstagramFill size={25} />
           <RiYoutubeFill size={25} />
         </Social>
+        <Divisor />
         <Container>
           <p>email@email.com</p>
           <p>+55 21 999999999</p>
           <p>08:00 - 22:00 - Todos os dias</p>
         </Container>
+        <Divisor />
         <Social style={{ width: "200px" }}>
-          <p>Sobre</p>
-          <p>Contato</p>
-          <p>Blog</p>
+          <a href="#">Sobre</a>
+          <a href="#">Contato</a>
+          <a href="">Blog</a>
         </Social>
       </Principal>
       <Copy>Copyright© Bendev Junior All Rights Reserved.</Copy>

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { RiMenu2Fill, RiSearch2Line, RiShoppingBag2Line } from "react-icons/ri";
+import logo from "../../img/Logo2.png";
 
 export const Header = styled.header`
   width: 100%;
@@ -19,11 +20,17 @@ export const Header = styled.header`
   }
 `;
 
+const Logo = styled.img`
+  width: 70px;
+  height: auto;
+  opacity: 0.7;
+`;
+
 function Cabecalho() {
   return (
     <Header>
       <RiMenu2Fill size={25} />
-      <div> logo </div>
+      <Logo src={logo} alt="" />
       <div>
         <RiSearch2Line size={25} />
         <RiShoppingBag2Line size={25} />

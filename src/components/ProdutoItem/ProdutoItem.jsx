@@ -4,9 +4,7 @@ function ProdutoItem({ titulo, src, preco }) {
   const Container = styled.a`
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    color: black;
-    text-decoration: none;
+    align-items: center;
   `;
 
   const Img = styled.img`
