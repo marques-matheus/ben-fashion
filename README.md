@@ -20,4 +20,4 @@ O Objetivo desse projeto é aprender e aprimorar conhecimentos em Front-End e Ba
 desenvolvimento de um e-commerce ficticia 
 
 ## OverView
-
+<img src="Overview.gif" alt="">
