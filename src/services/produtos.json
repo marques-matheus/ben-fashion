@@ -1,22 +1,22 @@
 [
   {
     "titulo": "Blusa Mapa do Mario",
-    "src": "/img/img.jpg",
+    "src": "/img/home/img.jpg",
     "preco": "R$150,00"
   },
   {
     "titulo": "Casaco verde",
-    "src": "/img/img2.jpg",
+    "src": "/img/home/img2.jpg",
     "preco": "R$250,00"
   },
   {
     "titulo": "Conjunto Bizarro",
-    "src": "/img/img3.jpg",
+    "src": "/img/home/img3.jpg",
     "preco": "R$350,00"
   },
   {
     "titulo": "Bolsa cara",
-    "src": "/img/img4.jpg",
+    "src": "/img/home/img4.jpg",
     "preco": "R$250,00"
   }
 ]

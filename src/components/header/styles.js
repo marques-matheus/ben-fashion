@@ -8,7 +8,7 @@ const Header = styled.header`
   background-color: #e7eaef;
   height: 60px;
   align-items: center;
-  position: absolute;
+  position: static;
   svg {
     cursor: pointer;
   }

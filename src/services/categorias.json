@@ -1,0 +1,33 @@
+[
+  {
+    "titulo": "Casaco Branco",
+    "src": "/img/categoria/casaco-branc.jpg",
+    "preco": "R$550,00"
+  },
+  {
+    "titulo": "Casaco Bege com Capuz",
+    "src": "/img/categoria/casaco-capuz.jpg",
+    "preco": "R$450,00"
+  },
+  {
+    "titulo": "Casaco Preto com Capuz",
+    "src": "/img/categoria/casaco-capuz-preto.jpg",
+    "preco": "R$450,00"
+  },
+  {
+    "titulo": "Casaco Marrom",
+    "src": "/img/categoria/casaco-marrom.jpg",
+    "preco": "R$550,00"
+  },
+  {
+    "titulo": "Casaco",
+    "src": "/img/categoria/casaco.jpg",
+    "preco": "R$550,00"
+  },
+
+  {
+    "titulo": "Casaco Branco",
+    "src": "/img/categoria/casaco-branco.jpg",
+    "preco": "R$550,00"
+  }
+]
