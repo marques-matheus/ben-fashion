@@ -1,5 +1,14 @@
+import Cabecalho from "../../components/header";
+import { useParams } from "react-router-dom";
+
 function Categoria() {
-    return ( <h1>Categoria</h1> );
+  const params = useParams();
+  return (
+    <>
+      <Cabecalho />
+      <h1>{params.categoria}</h1>
+    </>
+  );
 }
 
 export default Categoria;

@@ -16,7 +16,7 @@ const Img = styled.img`
 
 const Botao = styled.button`
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color:  ${props => props.theme.botaoDestaqueHome};
   backdrop-filter: blur(4px);
   color: white;
   width: 240px;
@@ -33,7 +33,7 @@ const Botao = styled.button`
   }
 `;
 
-const Div = styled.a`
+const Link = styled.a`
   width: 130px;
   display: flex;
   align-items: center;
@@ -54,7 +54,7 @@ const Luxury = styled.h2`
   color: #333333;
   font-size: 3rem;
   opacity: 0.6;
-  font-family: "Bodoni Moda", serif; ;
+  font-family: "Bodoni Moda", serif;
 `;
 
 const Fashion = styled(Luxury)`
@@ -76,31 +76,34 @@ function Home() {
   return (
     <>
       <Cabecalho />
+
       <main>
-        <Luxury>Luxury</Luxury>
-        <Fashion>Fashion</Fashion>
-        <And>&</And>
-        <Acessories>Acessories</Acessories>
-        <Img src={homeImg} alt="Home" />
-        <Botao>EXPLORAR COLEÇÃO</Botao>
+        <section>
+          <Luxury>Luxury</Luxury>
+          <Fashion>Fashion</Fashion>
+          <And>&</And>
+          <Acessories>Acessories</Acessories>
+          <Img src={homeImg} alt="Home" />
+          <Botao>EXPLORAR COLEÇÃO</Botao>
+        </section>
+
+        <Divisor />
+
+        <Container>
+          {produtos.map((produto, index) => (
+            <ProdutoItem
+              key={index}
+              src={produto.src}
+              preco={produto.preco}
+              titulo={produto.titulo}
+            />
+          ))}
+        </Container>
+
+        <Link href="#">
+          Explore Mais <HiOutlineArrowNarrowRight />
+        </Link>
       </main>
-
-      <Divisor/>
-
-      <Container>
-        {produtos.map((produto, index) => (
-          <ProdutoItem
-            key={index}
-            src={produto.src}
-            preco={produto.preco}
-            titulo={produto.titulo}
-          />
-        ))}
-      </Container>
-
-      <Div href="#">
-        Explore Mais <HiOutlineArrowNarrowRight />
-      </Div>
       <Rodape />
     </>
   );
