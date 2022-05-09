@@ -4,6 +4,9 @@ const Container = styled.a`
 display: flex;
 flex-direction: column;
 align-items: center;
+text-align: center;
+width: min-content;
+height: min-content;
 `;
 
 const Img = styled.img`
