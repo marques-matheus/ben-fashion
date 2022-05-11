@@ -28,15 +28,6 @@ const Logo = styled.img`
   opacity: 0.7;
 `;
 
-const ToggleMenu = styled.div`
-  width: 100vw;
-  height: 100vh;
-  background-color: white;
-  position: absolute;
 
-  transition: 1s ease-in-out;
-  
 
-`
-
-export { Header, Logo, BotaoMenu, BotaoSecundario, ToggleMenu };
+export { Header, Logo, BotaoMenu, BotaoSecundario};

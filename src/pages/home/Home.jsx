@@ -25,7 +25,7 @@ function Home() {
 
         <Divisor />
 
-        <Container>
+        <Container style={{'display':'grid', 'margin':'0 auto'}}>
           {produtos.map((produto, index) => (
             <ProdutoItem
               key={index}

@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  display: ${(props) => (props.isGrid ? "Grid" : "Flex")};
+export const Container = styled.section`
+  display: ${(props) => (props.isGrid ? "grid" : "flex")};
   grid-template-columns: 1fr 1fr;
-  margin: 8%;
+  padding: 6%;
   grid-gap: 20px;
   flex-direction: column;
 

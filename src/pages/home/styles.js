@@ -19,10 +19,6 @@ const Botao = styled.button`
   border-radius: 30px;
   font-size: 16px;
 
-  &:hover {
-    transform: scale(1.2);
-    transition: 300ms ease-in-out;
-  }
 `;
 
 const Link = styled.a`
@@ -44,6 +40,7 @@ const Link = styled.a`
 
 const Luxury = styled.h2`
   position: absolute;
+  z-index: 1;
   left: 43px;
   top: 230px;
   font-style: italic;
