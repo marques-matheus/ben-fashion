@@ -5,11 +5,14 @@ import Categorias from "../pages/Categorias";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import { tema } from "../styles/tema";
+//import Cabecalho from "../components/header";
+//import Rodape from "../components/footer";
 
 function App() {
   return (
     <ThemeProvider theme={tema}>
       <GlobalStyle />
+      {/* <Cabecalho/> */}
       <Router>
         <Routes>
           <Route path="/" element={<Home />}></Route>
@@ -17,6 +20,7 @@ function App() {
           <Route path="/categorias" element={<Categorias />}></Route>
         </Routes>
       </Router>
+      {/* <Rodape/> */}
     </ThemeProvider>
   );
 }

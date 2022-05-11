@@ -5,14 +5,14 @@ const ContainerMenu = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-    padding 16px;
+  padding: 16px;
   background-color: #fff;
 `;
 
 const TextoMenu = styled.h3`
   font-weight: 400;
   font-size: 14px;
-  text-transform: uppercase; ;
+  text-transform: uppercase;
 `;
 
 const DivBotoes = styled.div`
@@ -31,18 +31,24 @@ const BotaoMenu = styled.button`
   border-radius: 33px;
   color: #555555;
   cursor: pointer;
+  outline: none;
 
   &:hover {
     background: rgba(200, 200, 200, 0.5);
   }
-  
-  
-  
+
+  &::after {
+    content: "▼";
+    font-size: 0.8rem;
+  }
 `;
 
 const BotaoRedondo = styled(BotaoMenu)`
   width: 36px;
   height: 36px;
+  &::after {
+    content: "";
+  }
 `;
 
 export { ContainerMenu, TextoMenu, DivBotoes, BotaoMenu, BotaoRedondo };

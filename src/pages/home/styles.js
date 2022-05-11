@@ -34,6 +34,12 @@ const Link = styled.a`
   padding: 12px;
   text-decoration: none;
   color: black;
+
+  &::after{
+    content: '→';
+    font-size: 1.3rem;
+    line-height: 10px;
+  }
 `;
 
 const Luxury = styled.h2`

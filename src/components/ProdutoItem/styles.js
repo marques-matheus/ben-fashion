@@ -10,8 +10,8 @@ height: min-content;
 `;
 
 const Img = styled.img`
-width: 165px;
-height: 200px;
+width:  ${props => props.isGrid ? "165px" : "130px"};
+height:  ${props => props.isGrid ? "200px" : "170px"};;
 `;
 
 const TituloProduto = styled.h2`

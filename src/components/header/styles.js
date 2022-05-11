@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const Header = styled.header`
   width: 100%;
@@ -9,13 +9,17 @@ const Header = styled.header`
   height: 60px;
   align-items: center;
   position: static;
-  svg {
-    cursor: pointer;
-  }
+`;
 
-  svg:first-child {
-    padding-right: 10px;
-  }
+const BotaoMenu = styled.button`
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+`;
+const BotaoSecundario = styled(BotaoMenu)`
+  margin: 5px;
 `;
 
 const Logo = styled.img`
@@ -24,7 +28,15 @@ const Logo = styled.img`
   opacity: 0.7;
 `;
 
+const ToggleMenu = styled.div`
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  position: absolute;
 
-export {
-    Header, Logo, 
-}
+  transition: 1s ease-in-out;
+  
+
+`
+
+export { Header, Logo, BotaoMenu, BotaoSecundario, ToggleMenu };

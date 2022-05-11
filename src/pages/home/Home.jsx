@@ -4,7 +4,7 @@ import ProdutoItem from "../../components/ProdutoItem/ProdutoItem";
 import homeImg from "../../img/imgHome.jpg";
 import produtos from "../../services/produtos.json";
 import Container from "../../components/ContainerProdutos";
-import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+
 import Rodape from "../../components/footer";
 import { Divisor } from "../../components/divisor/Divisor";
 
@@ -37,7 +37,7 @@ function Home() {
         </Container>
 
         <Link href="#">
-          Explore Mais <HiOutlineArrowNarrowRight />
+          Explore Mais 
         </Link>
       </main>
       <Rodape />
